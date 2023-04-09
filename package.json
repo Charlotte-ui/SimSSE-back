@@ -1,0 +1,23 @@
+{
+  "name": "simsse-back",
+  "version": "1.0.0",
+  "description": "REST API app for SimSSE Editeur",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Charlotte-ui/SimSSE-back.git"
+  },
+  "author": "Marty Charlotte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Charlotte-ui/SimSSE-back/issues"
+  },
+  "homepage": "https://github.com/Charlotte-ui/SimSSE-back#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "orientjs": "^3.0.11"
+  }
+}
