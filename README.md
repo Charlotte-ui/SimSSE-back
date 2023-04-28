@@ -1,1 +1,1 @@
-node index.js
+script : npm start

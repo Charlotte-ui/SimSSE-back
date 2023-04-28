@@ -1,16 +1,42 @@
-const express = require('express')
-const OrientDB = require("orientjs");
-var cors = require("cors");
+import express from 'express';
+import http from 'http';
+import bodyParser from 'body-parser';
+import cookieParser from 'cookie-parser';
+import compression from 'compression';
+import cors from "cors";
 
+const PORT = 8080; // 3000
+
+
+// Initialise app
 const app = express()
+app.use(cors({
+  credentials:true,
+}))
+
+app.use(compression());
+app.use(cookieParser());
+app.use(bodyParser.json());
+
+
+// Initiate server
+
+const server = http.createServer(app);
+
+server.listen(PORT,() => {
+  console.log('SimSSE API launch succesfuly')
+  console.log('http://localhost:'+PORT+'/')
+});
+
+/*
 const expressSwagger = require("express-swagger-generator")(app);
-const port = 3000; // 8080
 
 app.use(cors()); 
 
+const OrientDB = require("orientjs");
 
 
-app.get("/", (req, res) => {
+app.get("/", (req:any, res:any) => {
     res.send("SimSSE API");
   });
 
@@ -44,10 +70,10 @@ let options = {
         },
       },
     },
-    basedir: __dirname, //app absolute path
-    files: ["./routes/**/*.js"], //Path to the API handle folder
-  };
-  expressSwagger(options);
+    basedir: __dirname, //app absolute path /** */
+ //   files: ["./routes/**/*.js"], //Path to the API handle folder
+//  };
+/*  expressSwagger(options);
   
   module.exports = app;
 
@@ -63,7 +89,7 @@ let options = {
  var db = server.use('SimSSE')
  console.log('Using Database:', db.name);
 
-/*
+
 
 
 
