@@ -1,0 +1,124 @@
+
+2023-04-28 13:56:17:745 INFO  Windows OS is detected, 262144 limit of open files will be set for the disk cache. [ONative]
+2023-04-28 13:56:17:767 INFO  Loading configuration from: C:/Users/Chacha/Downloads/orientdb-community-3.2.17/orientdb-community-3.2.17/config/orientdb-server-config.xml... [OServerConfigurationLoaderXml]
+2023-04-28 13:56:17:984 SEVER Invalid syntax. Below an example of how it should be: [OServerConfigurationLoaderXml]
+jakarta.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 117; columnNumber: 28; The end-tag for element type "parameter" must end with a '>' delimiter.]
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(AbstractUnmarshallerImpl.java:310)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(UnmarshallerImpl.java:538)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:224)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:140)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:179)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:164)
+	at com.orientechnologies.orient.server.config.OServerConfigurationLoaderXml.load(OServerConfigurationLoaderXml.java:73)
+	at com.orientechnologies.orient.server.config.OServerConfigurationManager.<init>(OServerConfigurationManager.java:48)
+	at com.orientechnologies.orient.server.OServer.startup(OServer.java:293)
+	at com.orientechnologies.orient.server.OServer.startup(OServer.java:285)
+	at com.orientechnologies.orient.server.OServerMain$1.run(OServerMain.java:49)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 117; columnNumber: 28; The end-tag for element type "parameter" must end with a '>' delimiter.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1701)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:218)
+	... 9 more
+
+2023-04-28 13:56:18:009 SEVER Error on reading server configuration from file: C:\Users\Chacha\Downloads\orientdb-community-3.2.17\orientdb-community-3.2.17\config\orientdb-server-config.xml [OServer]
+java.io.IOException: jakarta.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 117; columnNumber: 28; The end-tag for element type "parameter" must end with a '>' delimiter.]
+	at com.orientechnologies.orient.server.config.OServerConfigurationLoaderXml.load(OServerConfigurationLoaderXml.java:113)
+	at com.orientechnologies.orient.server.config.OServerConfigurationManager.<init>(OServerConfigurationManager.java:48)
+	at com.orientechnologies.orient.server.OServer.startup(OServer.java:293)
+	at com.orientechnologies.orient.server.OServer.startup(OServer.java:285)
+	at com.orientechnologies.orient.server.OServerMain$1.run(OServerMain.java:49)
+Caused by: jakarta.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 117; columnNumber: 28; The end-tag for element type "parameter" must end with a '>' delimiter.]
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(AbstractUnmarshallerImpl.java:310)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(UnmarshallerImpl.java:538)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:224)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:140)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:179)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:164)
+	at com.orientechnologies.orient.server.config.OServerConfigurationLoaderXml.load(OServerConfigurationLoaderXml.java:73)
+	... 4 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 117; columnNumber: 28; The end-tag for element type "parameter" must end with a '>' delimiter.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1701)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:218)
+	... 9 more
+
+2023-04-28 13:56:18:011 SEVER Error during server execution [OServerMain$1]
+com.orientechnologies.orient.core.exception.OConfigurationException: Error on reading server configuration from file: C:\Users\Chacha\Downloads\orientdb-community-3.2.17\orientdb-community-3.2.17\config\orientdb-server-config.xml
+	at com.orientechnologies.orient.server.OServer.startup(OServer.java:300)
+	at com.orientechnologies.orient.server.OServer.startup(OServer.java:285)
+	at com.orientechnologies.orient.server.OServerMain$1.run(OServerMain.java:49)
+Caused by: java.io.IOException: jakarta.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 117; columnNumber: 28; The end-tag for element type "parameter" must end with a '>' delimiter.]
+	at com.orientechnologies.orient.server.config.OServerConfigurationLoaderXml.load(OServerConfigurationLoaderXml.java:113)
+	at com.orientechnologies.orient.server.config.OServerConfigurationManager.<init>(OServerConfigurationManager.java:48)
+	at com.orientechnologies.orient.server.OServer.startup(OServer.java:293)
+	... 2 more
+Caused by: jakarta.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; lineNumber: 117; columnNumber: 28; The end-tag for element type "parameter" must end with a '>' delimiter.]
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(AbstractUnmarshallerImpl.java:310)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(UnmarshallerImpl.java:538)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:224)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(UnmarshallerImpl.java:189)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:140)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:179)
+	at jakarta.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(AbstractUnmarshallerImpl.java:164)
+	at com.orientechnologies.orient.server.config.OServerConfigurationLoaderXml.load(OServerConfigurationLoaderXml.java:73)
+	... 4 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 117; columnNumber: 28; The end-tag for element type "parameter" must end with a '>' delimiter.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1701)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2899)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(UnmarshallerImpl.java:218)
+	... 9 more
+
+2023-04-28 13:56:18:012 INFO  OrientDB Server is shutting down... [OServer]
+2023-04-28 13:56:18:013 INFO  OrientDB Server shutdown complete
+ [OServer]
