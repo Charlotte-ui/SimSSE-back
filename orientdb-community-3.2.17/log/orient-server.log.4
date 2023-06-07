@@ -1,77 +1,30 @@
 
-2023-05-25 13:52:04:850 INFO  Windows OS is detected, 262144 limit of open files will be set for the disk cache. [ONative]
-2023-05-25 13:52:04:922 INFO  Loading configuration from: C:/Users/CMARTY/Documents/GitHub/SimSSE-back/orientdb-community-3.2.17/config/orientdb-server-config.xml... [OServerConfigurationLoaderXml]
-2023-05-25 13:52:05:279 INFO  OrientDB Server v3.2.17 (build 211ebdf4e697bc32a41a4456f09b4c47f2a4eb4b, branch UNKNOWN) is starting up... [OServer]
-2023-05-25 13:52:05:719 INFO  8311037952 B/7926 MB/7 GB of physical memory were detected on machine [ONative]
-2023-05-25 13:52:05:720 INFO  Detected memory limit for current process is 8311037952 B/7926 MB/7 GB [ONative]
-2023-05-25 13:52:05:722 INFO  JVM can use maximum 1963MB of heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
-2023-05-25 13:52:05:740 INFO  Because OrientDB is running outside a container 2g of memory will be left unallocated according to the setting 'memory.leftToOS' not taking into account heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
-2023-05-25 13:52:05:743 INFO  OrientDB auto-config DISKCACHE=3 915MB (heap=1 963MB os=7 926MB) [orientechnologies]
-2023-05-25 13:52:05:744 INFO  System is started under an effective user : `CMARTY` [OEngineLocalPaginated]
-2023-05-25 13:52:06:238 INFO  WAL maximum segment size is set to 8 389 MB [OrientDBDistributed]
-2023-05-25 13:52:06:590 INFO  Databases directory: C:\Users\CMARTY\Documents\GitHub\SimSSE-back\orientdb-community-3.2.17\databases [OServer]
-2023-05-25 13:52:06:690 INFO  Page size for WAL located in C:\Users\CMARTY\Documents\GitHub\SimSSE-back\orientdb-community-3.2.17\databases\OSystem is set to 4096 bytes. [CASDiskWriteAheadLog]
-2023-05-25 13:52:07:167 INFO  DWL:OSystem: block size = 4096 bytes, maximum segment size = 8389 MB [DoubleWriteLogGL]
-2023-05-25 13:52:07:412 INFO  Storage 'plocal:C:\Users\CMARTY\Documents\GitHub\SimSSE-back\orientdb-community-3.2.17\databases/OSystem' is opened under OrientDB distribution : 3.2.17 (build 211ebdf4e697bc32a41a4456f09b4c47f2a4eb4b, branch UNKNOWN) [OLocalPaginatedStorage]
-2023-05-25 13:52:07:737 INFO  Listening binary connections on 0.0.0.0:2424 (protocol v.38, socket=default) [OServerNetworkListener]
-2023-05-25 13:52:07:742 INFO  Listening http connections on 0.0.0.0:2480 (protocol v.10, socket=default) [OServerNetworkListener]
-2023-05-25 13:52:07:790 INFO  Found ORIENTDB_ROOT_PASSWORD variable, using this value as root's password [OServer]
-2023-05-25 13:52:07:792 INFO  Installing dynamic plugin 'orientdb-etl-3.2.17.jar'... [OServerPluginManager]
-2023-05-25 13:52:07:792 INFO  Installing dynamic plugin 'orientdb-studio-3.2.17.zip'... [OServerPluginManager]
-2023-05-25 13:52:07:792 INFO  [OVariableParser.resolveVariables] Property not found: distributed [orientechnologies]
-2023-05-25 13:52:07:807 WARNI Authenticated clients can execute any kind of code into the server by using the following allowed languages: [sql] [OServerSideScriptInterpreter]
-2023-05-25 13:52:07:892 INFO  OrientDB Studio available at http://172.16.220.183:2480/studio/index.html [OServer]
-2023-05-25 13:52:07:892 INFO  OrientDB Server is active v3.2.17 (build 211ebdf4e697bc32a41a4456f09b4c47f2a4eb4b, branch UNKNOWN). [OServer]
-2023-05-25 13:52:42:097 INFO  Page size for WAL located in C:\Users\CMARTY\Documents\GitHub\SimSSE-back\orientdb-community-3.2.17\databases\simsse is set to 4096 bytes. [CASDiskWriteAheadLog]
-2023-05-25 13:52:46:246 INFO  DWL:simsse: block size = 4096 bytes, maximum segment size = 8389 MB [DoubleWriteLogGL]
-2023-05-25 13:52:46:507 INFO  Storage 'plocal:C:\Users\CMARTY\Documents\GitHub\SimSSE-back\orientdb-community-3.2.17\databases/simsse' is opened under OrientDB distribution : 3.2.17 (build 211ebdf4e697bc32a41a4456f09b4c47f2a4eb4b, branch UNKNOWN) [OLocalPaginatedStorage]
-2023-05-25 16:01:25:217 WARNI ->127.0.0.1: Error on content size 1945218: the maximum allowed is 1000000 [ONetworkProtocolHttpDb]
-2023-05-25 17:01:21:697 WARNI ->127.0.0.1: Error on content size 2670036: the maximum allowed is 1000000 [ONetworkProtocolHttpDb]
-2023-05-25 17:07:31:511 WARNI ->127.0.0.1: Error on content size 2882132: the maximum allowed is 1000000 [ONetworkProtocolHttpDb]
-2023-05-25 17:19:44:641 WARNI ->127.0.0.1: Error on content size 2889016: the maximum allowed is 1000000 [ONetworkProtocolHttpDb]
-2023-05-25 17:22:47:061 WARNI ->127.0.0.1: Error on content size 2641820: the maximum allowed is 1000000 [ONetworkProtocolHttpDb]
-2023-05-25 17:41:56:960 WARNI Received signal: SIGINT [OSignalHandler]
-2023-05-25 17:41:56:966 INFO  OrientDB Server is shutting down... [OServer]
-2023-05-25 17:41:56:966 INFO  Shutting down listeners: [OServer]
-2023-05-25 17:41:56:970 INFO  - ONetworkProtocolBinary /0.0.0.0:2424: [OServer]
-2023-05-25 17:41:56:970 INFO  - ONetworkProtocolHttpDb /0.0.0.0:2480: [OServer]
-2023-05-25 17:41:56:970 INFO  Shutting down protocols [OServer]
-2023-05-25 17:41:56:981 INFO  Shutting down plugins: [OServerPluginManager]
-2023-05-25 17:41:56:981 INFO  - studio [OServerPluginManager]
-2023-05-25 17:41:56:982 INFO  - custom-sql-functions-manager [OServerPluginManager]
-2023-05-25 17:41:56:982 INFO  - script-interpreter [OServerPluginManager]
-2023-05-25 17:41:57:003 INFO  - etl [OServerPluginManager]
-2023-05-25 17:41:57:007 INFO  Shutting down databases: [OServer]
-2023-05-25 17:41:57:007 INFO  Orient Engine is shutting down... [Orient]
-2023-05-25 17:41:57:430 INFO  - shutdown storage: OSystem... [OrientDBDistributed]
-2023-05-25 17:41:57:536 INFO  - shutdown storage: simsse... [OrientDBDistributed]
-2023-05-25 17:41:58:083 INFO  Clearing byte buffer pool [Orient]
-2023-05-25 17:41:58:087 SEVER Exception in thread 'OrientDBEmbedded-1' [ScalingThreadPoolExecutor]
-com.orientechnologies.orient.core.exception.ODatabaseException: Cannot open database 'OSystem'
-	at com.orientechnologies.orient.core.db.OrientDBEmbedded.openNoAuthorization(OrientDBEmbedded.java:491)
-	at com.orientechnologies.orient.core.db.OrientDBEmbedded.lambda$executeNoAuthorization$9(OrientDBEmbedded.java:1194)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: com.orientechnologies.orient.core.exception.ODatabaseException: OrientDB Instance is closed
-	at com.orientechnologies.orient.core.db.OrientDBEmbedded.checkOpen(OrientDBEmbedded.java:1149)
-	at com.orientechnologies.orient.core.db.OrientDBEmbedded.openNoAuthorization(OrientDBEmbedded.java:481)
-	... 5 more
-
-2023-05-25 17:41:58:087 SEVER Exception in thread 'OrientDBEmbedded-2' [ScalingThreadPoolExecutor]
-com.orientechnologies.orient.core.exception.ODatabaseException: Cannot open database 'simsse'
-	at com.orientechnologies.orient.core.db.OrientDBEmbedded.openNoAuthorization(OrientDBEmbedded.java:491)
-	at com.orientechnologies.orient.core.db.OrientDBEmbedded.lambda$executeNoAuthorization$9(OrientDBEmbedded.java:1194)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: com.orientechnologies.orient.core.exception.ODatabaseException: OrientDB Instance is closed
-	at com.orientechnologies.orient.core.db.OrientDBEmbedded.checkOpen(OrientDBEmbedded.java:1149)
-	at com.orientechnologies.orient.core.db.OrientDBEmbedded.openNoAuthorization(OrientDBEmbedded.java:481)
-	... 5 more
-
-2023-05-25 17:41:58:106 INFO  OrientDB Engine shutdown complete [Orient]
-2023-05-25 17:41:58:106 INFO  OrientDB Server shutdown complete
- [OServer]
+2023-05-26 09:25:12:681 INFO  Windows OS is detected, 262144 limit of open files will be set for the disk cache. [ONative]
+2023-05-26 09:25:12:751 INFO  Loading configuration from: C:/Users/CMARTY/Documents/GitHub/SimSSE-back/orientdb-community-3.2.17/config/orientdb-server-config.xml... [OServerConfigurationLoaderXml]
+2023-05-26 09:25:12:998 INFO  OrientDB Server v3.2.17 (build 211ebdf4e697bc32a41a4456f09b4c47f2a4eb4b, branch UNKNOWN) is starting up... [OServer]
+2023-05-26 09:25:13:299 INFO  8311037952 B/7926 MB/7 GB of physical memory were detected on machine [ONative]
+2023-05-26 09:25:13:299 INFO  Detected memory limit for current process is 8311037952 B/7926 MB/7 GB [ONative]
+2023-05-26 09:25:13:314 INFO  JVM can use maximum 1963MB of heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2023-05-26 09:25:13:330 INFO  Because OrientDB is running outside a container 2g of memory will be left unallocated according to the setting 'memory.leftToOS' not taking into account heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2023-05-26 09:25:13:330 INFO  OrientDB auto-config DISKCACHE=3 915MB (heap=1 963MB os=7 926MB) [orientechnologies]
+2023-05-26 09:25:13:330 INFO  System is started under an effective user : `CMARTY` [OEngineLocalPaginated]
+2023-05-26 09:25:13:816 INFO  WAL maximum segment size is set to 8 358 MB [OrientDBDistributed]
+2023-05-26 09:25:14:117 INFO  Databases directory: C:\Users\CMARTY\Documents\GitHub\SimSSE-back\orientdb-community-3.2.17\databases [OServer]
+2023-05-26 09:25:14:217 INFO  Page size for WAL located in C:\Users\CMARTY\Documents\GitHub\SimSSE-back\orientdb-community-3.2.17\databases\OSystem is set to 4096 bytes. [CASDiskWriteAheadLog]
+2023-05-26 09:25:14:587 INFO  DWL:OSystem: block size = 4096 bytes, maximum segment size = 8358 MB [DoubleWriteLogGL]
+2023-05-26 09:25:14:772 INFO  Storage 'plocal:C:\Users\CMARTY\Documents\GitHub\SimSSE-back\orientdb-community-3.2.17\databases/OSystem' is opened under OrientDB distribution : 3.2.17 (build 211ebdf4e697bc32a41a4456f09b4c47f2a4eb4b, branch UNKNOWN) [OLocalPaginatedStorage]
+2023-05-26 09:25:15:004 INFO  Listening binary connections on 0.0.0.0:2424 (protocol v.38, socket=default) [OServerNetworkListener]
+2023-05-26 09:25:15:004 INFO  Listening http connections on 0.0.0.0:2480 (protocol v.10, socket=default) [OServerNetworkListener]
+2023-05-26 09:25:15:042 INFO  Found ORIENTDB_ROOT_PASSWORD variable, using this value as root's password [OServer]
+2023-05-26 09:25:15:042 INFO  Installing dynamic plugin 'orientdb-etl-3.2.17.jar'... [OServerPluginManager]
+2023-05-26 09:25:15:057 INFO  Installing dynamic plugin 'orientdb-studio-3.2.17.zip'... [OServerPluginManager]
+2023-05-26 09:25:15:057 INFO  [OVariableParser.resolveVariables] Property not found: distributed [orientechnologies]
+2023-05-26 09:25:15:073 WARNI Authenticated clients can execute any kind of code into the server by using the following allowed languages: [sql] [OServerSideScriptInterpreter]
+2023-05-26 09:25:15:120 INFO  OrientDB Studio available at http://172.16.220.183:2480/studio/index.html [OServer]
+2023-05-26 09:25:15:120 INFO  OrientDB Server is active v3.2.17 (build 211ebdf4e697bc32a41a4456f09b4c47f2a4eb4b, branch UNKNOWN). [OServer]
+2023-05-26 09:25:52:354 INFO  Page size for WAL located in C:\Users\CMARTY\Documents\GitHub\SimSSE-back\orientdb-community-3.2.17\databases\simsse is set to 4096 bytes. [CASDiskWriteAheadLog]
+2023-05-26 09:25:56:196 INFO  DWL:simsse: block size = 4096 bytes, maximum segment size = 8358 MB [DoubleWriteLogGL]
+2023-05-26 09:25:56:472 INFO  Storage 'plocal:C:\Users\CMARTY\Documents\GitHub\SimSSE-back\orientdb-community-3.2.17\databases/simsse' is opened under OrientDB distribution : 3.2.17 (build 211ebdf4e697bc32a41a4456f09b4c47f2a4eb4b, branch UNKNOWN) [OLocalPaginatedStorage]
+2023-05-26 09:26:36:613 WARNI {db=simsse} Record (#141:0) is null [OEdgeIterator]
+2023-05-26 10:00:52:262 WARNI {db=simsse} Record (#141:0) is null [OEdgeIterator]
+2023-05-26 10:01:00:997 WARNI {db=simsse} Record (#141:0) is null [OEdgeIterator]
